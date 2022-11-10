@@ -1,0 +1,418 @@
+  @media only screen and (max-device-width: 480px){
+    .NavbarMobile {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    border-radius: 6px;
+    z-index: 100;
+    height:10%;
+    
+}
+}
+
+.NavbarMobile a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    
+   
+}
+  
+.NavbarMobile a:hover {
+    
+    color: #c2c2c2;
+}
+
+.NavbarMobile .liquid {
+    position:fixed;
+    top:10px;
+    right:5px;
+    width:155px;
+    height:45px;
+    background:#4973ff;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+    border-radius:45px;
+    z-index:-1;
+  }
+  
+  @import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
+
+
+
+  #container1 {
+      /* Center the text in the viewport. */
+      position: absolute;
+      margin:auto;
+      width: 36vw;
+      height: 26px;
+      top: 0px;
+      right: 16px;
+      
+      
+      
+      /* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
+      filter: url(#threshold) blur(0.6px);
+  }
+  
+  /* Your average text styling */
+#text1, #text2 {
+	position: absolute;
+	width: 100%;
+	display: inline-block;
+	
+	font-family: 'Raleway', sans-serif;
+	font-size: 15pt;
+	
+	text-align: center;
+	
+	user-select: none;
+
+}
+
+
+
+
+.Navbar1{
+    display:none;
+}
+.Navbar2{
+    display:none;
+  }
+
+  
+
+
+
+
+  @media only screen and (max-device-width: 480px){ 
+    .NavbarMobile .a .button{
+      display:flex;
+    }}
+
+
+
+
+
+  @media only screen and (max-device-width: 480px){ 
+  .hamburger{
+    background-color:transparent;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    margin-top:-5px;
+}
+  }
+
+
+
+.hamburger .line{
+    display:block;
+    width:40px;
+    height:3px;
+    background-color:#ecf0f1;
+    margin-block:6px;
+    border-radius:4px;
+    transition: transform .5s,
+    opacity .25s;
+}
+
+.hamburger.active .line:nth-child(1){
+    transform: translateY(9px)
+    rotate(45deg);
+}
+
+.hamburger.active .line:nth-child(2){
+    opacity:0;
+}
+
+.hamburger.active .line:nth-child(3){
+    transform: translateY(-9px)
+    rotate(-45deg);
+}
+
+
+
+  h1{
+    position: relative;
+    font-size:3.1em;
+    display:flex;
+    justify-content:right;
+    align-items:right;
+    font-weight: bold;
+    text-decoration:none;
+    line-height:1em;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:transparent;
+    -webkit-text-stroke:1px rgba(225,225,225,0.5);
+     max-height:10vh;
+     text-align:right;
+     margin-top: 60px;
+     margin-right:10px;
+     margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .container2 .card
+  {
+    
+    justify-content:center;
+    align-items:center;
+    position: relative;
+    padding:center;
+
+    margin-bottom: 3%;
+    margin-top: 3%;
+
+    width: 350px;
+    height: 480px;
+    background: #232323;
+    border-radius: 25px;
+    overflow: hidden;
+
+    
+  }
+
+  .container2 .card:before
+  {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+  }
+  .container2 .card:hover:before
+  {
+    clip-path: circle(300px at 80% -20%);
+  }
+  .container2 .card:after
+  {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: -30%;
+    font-size: 7em;
+    color: rgba(255,255,255,0.02);
+    font-weight: 800;
+    font-style: italic;
+    z-index: 1;
+  }
+  .container2 .card .imgBx
+  {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 100%;
+    height: 270px;
+    transition: 0.5s;
+    
+  }
+  .container2 .card:hover .imgBx
+  {
+    top: 0;
+    transform: translateY(0);
+  }
+  .container2 .card .imgBx img
+  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+    width: 275px;
+  }
+  .container2 .card .contentBx1
+  {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+  }
+  .container2 .card:hover .contentBx1
+  {
+    height: 210px;
+  }
+  .container2 .card .contentBx1 h2
+  {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+  .container2 .card .contentBx1 .size,
+  .container2 .card .contentBx1 .color
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 29px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.9s;
+  }
+  .container2 .card:hover .contentBx1 .size
+  {
+    opacity: 10;
+    visibility: visible;
+    transition-delay: 0.5s;
+  }
+  .container2 .card:hover .contentBx1 .color
+  {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+  }
+  .container2 .card .contentBx1 .size h3,
+  .container2 .card .contentBx1 .color h3
+  {
+    color: #fff;
+    font-weight: 300;
+    font-size: 19px;
+    text-transform: uppercas;
+    letter-spacing: 2px;
+    margin-right: 10px;
+    padding-top:8px;
+  }
+  .container2 .card .contentBx1 .size span
+  {
+    width: 29px;
+    height: 26px;
+    text-align: center;
+    line-height: 24px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    border-radius: 4px;
+    margin: 0 5px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .container2 .card .contentBx1 .size span:hover
+  {
+    color: #111;
+    background: teal;
+  }
+  .container2 .card .contentBx1 .color span
+  {
+    width: 20px;
+    height: 20px;
+    background: #f00;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .container2 .card .contentBx1 .color span:nth-child(2)
+  {
+    background: #9bdc28;
+  }
+  .container2 .card .contentBx1 .color span:nth-child(3)
+  {
+    background: #03a9f4;
+  }
+  .container2 .card .contentBx1 .color span:nth-child(4)
+  {
+    background: #e91e63;
+  }
+ 
+
+
+
+  .container2 .card .contentBx1 a {
+    position:relative;
+    padding:center;
+    display:block;
+    text-decoration:none;
+    text-transform:uppercase;
+    width:100px;
+    overflow:hidden;
+    border-radius:30px;
+    margin-left:87.5px;
+    margin-top:center;
+
+  }
+
+
+  .container2 .card .contentBx1 a span {
+    position:relative;
+    color:#fff;
+    font-size:20px;
+    font-family:Arial;
+    letter-spacing:3px;
+    z-index:1;
+    margin-left: -50px;
+    
+  }
+
+  
+
+.container2 .card .contentBx1 a .liquid {
+    position:absolute;
+    top:-80px;
+    left:0;
+    width:200px;
+    height:200px;
+    background:#4973ff;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+    transition: .5s;
+
+
+  }
+
+.container2 .card .contentBx1 a .liquid::after,
+.container2 .card .contentBx1 a .liquid::before {
+    content: ''; 
+    width:200%;
+    height:200%;
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translate(-50%, -75%);
+    background: #000;
+  }
+
+  .container2 .card .contentBx1 a .liquid::before {
+    border-radius:45%;
+    background:rgba(20, 20, 20, 1);
+    animation: animate 5s linear infinite;
+  }
+
+  .container2 .card .contentBx1 a .liquid::after {
+    border-radius:40%;
+    background:rgba(20, 20, 20, .5);
+    animation: animate 10s linear infinite;
+  }
+
+  .container2 .card .contentBx1 a:hover .liquid {
+    top:-120px;
+}

@@ -1,0 +1,130 @@
+
+body{
+    background-color: #3b2a27;
+}
+
+.container a img{
+    position:absolute;
+    top:-65px;
+    left:px;
+    
+    
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+h3 {
+    text-transform: uppercase;
+    letter-spacing:2px;
+    font-size:25px;
+
+
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:#3b2a27;
+    min-height:100vh;
+    
+}
+
+.card{
+    top:18px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:600px;
+    width:400px;
+    flex-direction: column;
+    gap:35px;
+    border-radius:25px;
+    background:#6d6d6d;
+    box-shadow: 16px 16px 32px black,
+    -16px -16px 32px #3b2a27;
+    
+}
+
+.line{
+    width:100px;
+    height:3px;
+    background:#fff;
+    
+}
+
+.inputBox{
+    position:relative;
+    width:350px;
+
+}
+
+.inputBox input{
+    width:100%;
+    padding:15px;
+    outline:none;
+    border:none;
+    color:#000;
+    font-size:1em;
+    background: transparent;
+    border-left:2px solid #000;
+    border-bottom:2px solid #000;
+    transition:0.1s;
+}
+
+.inputBox span{
+    margin-top:5px;
+    position:absolute;
+    left:0;
+    transform:translateY(-4px);
+    margin-left:10px;
+    padding:10px;
+    pointer-events:none;
+    font-size:12px;
+    color:#000;
+    text-transform:uppercase;
+    transition:0.5s;
+    letter-spacing:3px;
+
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span{
+    transform:translateX(113px) translateY(-15px);
+    font-size:0.7em;
+    padding:5px 10px;
+    background:#000;
+    letter-spacing:0.2em;
+    color:#fff;
+    border:2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus{
+    border:2px solid #000;
+}
+
+button{
+    height:50px;
+    width:140px;
+    border-radius:4px;
+    border:2px solid #000;
+    cursor:pointer;
+    background-color:transparent;
+    transition:0.5s;
+    text-transform:uppercase;
+    font-size:13px;
+    letter-spacing: 2px;
+    color:#000;
+
+}
+
+button:hover{
+    background-color:#000;
+    color: white;
+}
